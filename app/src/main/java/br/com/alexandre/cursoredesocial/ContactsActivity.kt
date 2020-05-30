@@ -17,6 +17,11 @@ class ContactsActivity : AppCompatActivity() {
 
     private lateinit var mAdapter: GroupAdapter<ViewHolder>
 
+    //Ação para enviar o usuário que queremos conversar para outra Activity
+    companion object {
+        val USER_KEY = "user_key"
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.act_contacts)
@@ -27,6 +32,9 @@ class ContactsActivity : AppCompatActivity() {
         //cria evento para abrir tela de chat
         mAdapter.setOnItemClickListener { item, view ->
             val intent = Intent(this@ContactsActivity, ChatActivity::class.java)
+            val userItem: UserItem = item as UserItem
+
+            intent.putExtra(USER_KEY, userItem.mUser)
             startActivity(intent)
         }
 

@@ -72,9 +72,9 @@ class RegisterActivity : AppCompatActivity() {
                     val user = User(uid, name, url)
 
                     FirebaseFirestore.getInstance().collection("users")
-                        .add(user)
+                        .document(uid) // adicionando uid como chave
+                        .set(user) // atribuindo o usuário a esta chave (uid)
                         .addOnSuccessListener {
-                            Log.i("Teste", it.id)
 
                             //abre uma nova activity e coloca no topo
                             val intent = Intent(this@RegisterActivity,
@@ -83,8 +83,6 @@ class RegisterActivity : AppCompatActivity() {
                                     Intent.FLAG_ACTIVITY_NEW_TASK
 
                             startActivity(intent)
-
-
                         }
                         .addOnFailureListener{
                             Log.e("Teste", it.message, it)

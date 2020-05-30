@@ -13,5 +13,7 @@
     <string name="textview">TextView</string>
     <string name="hello">Digite a mensagem</string>
     <string name="send">Enviar</string>
+    <string name="oi">Oi</string>
+    <string name="mensagem_item_to_message">This is the new message so crazy, entao o que temos que fazer é</string>
 
 </resources>
