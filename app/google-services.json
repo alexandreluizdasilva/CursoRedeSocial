@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "696691873680",
+    "firebase_url": "https://xchatmesseger.firebaseio.com",
+    "project_id": "xchatmesseger",
+    "storage_bucket": "xchatmesseger.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:696691873680:android:c2a44e53125b13f3718515",
+        "android_client_info": {
+          "package_name": "br.com.alexandre.cursoredesocial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "696691873680-e3mh61dms2ck30uogiv5n1disl2jstp0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbU_c8Xqo4HNiW96KofzVaVP-BZZuJLpY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "696691873680-e3mh61dms2ck30uogiv5n1disl2jstp0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

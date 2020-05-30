@@ -34,4 +34,28 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    //Firebase core
+    implementation 'com.google.firebase:firebase-core:16.0.1'
+
+    //Firebase Auth
+    implementation 'com.google.firebase:firebase-auth:16.0.1'
+
+    //Firebase Firestore
+    implementation 'com.google.firebase:firebase-firestore:15.0.0'
+
+    //Fibase Storage
+    implementation 'com.google.firebase:firebase-storage:15.0.0'
+
+    //Biblioteca imagem circular
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+
+    //Dependencias para criação do RecyclerView
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.xwray:groupie:2.1.0'
+
+
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
 }
+apply plugin: 'com.google.gms.google-services'

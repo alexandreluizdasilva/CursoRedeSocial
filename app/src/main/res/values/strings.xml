@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">CursoRedeSocial</string>
+    <string name="app_name">XChatMesseger</string>
+    <string name="txt_account">Não tem uma conta? Crie aqui!</string>
+    <string name="btn_enter">Entrar</string>
+    <string name="email">Email</string>
+    <string name="nome">Nome</string>
+    <string name="btn_register">Cadastrar</string>
+    <string name="senha">Senha</string>
+    <string name="foto">Foto</string>
+    <string name="contacts">contatos</string>
+    <string name="logout">logout</string>
+    <string name="select_contact">Contatos</string>
+    <string name="textview">TextView</string>
+
 </resources>
