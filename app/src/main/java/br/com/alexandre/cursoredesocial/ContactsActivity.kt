@@ -24,6 +24,12 @@ class ContactsActivity : AppCompatActivity() {
         mAdapter = GroupAdapter()
         list_contact.adapter = mAdapter
 
+        //cria evento para abrir tela de chat
+        mAdapter.setOnItemClickListener { item, view ->
+            val intent = Intent(this@ContactsActivity, ChatActivity::class.java)
+            startActivity(intent)
+        }
+
 
         fetchUsers()
     }
@@ -54,6 +60,7 @@ class ContactsActivity : AppCompatActivity() {
                 for(doc in snapshot) {
                     val user = doc.toObject(User::class.java)
                     Log.i("Teste", "user ${user.uid}, ${user.name}")
+                    mAdapter.add(UserItem(user))
                 }
             }
         }
